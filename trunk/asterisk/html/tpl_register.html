@@ -1,0 +1,36 @@
+  	<h3>Registration</h3>
+    <p>With a new account, you can be one of many people who's enjoying the best services with a lowest cost you can find. If you have already register, click <a href="?aobs=auth&amp;tab=" alt="Login" class="url">HERE</a> to login.</p>
+    <form id="register" method="post" action="?aobs=reg&amp;tab=dne">
+       <h1>User Information</h1>
+       <div>
+       <label>Username:</label><p><input type="text" name="username" id="username" class="field" /></p>
+       <label>Password:</label><p><input type="password" name="password" id="password" class="field" /></p>
+	   <label>Verify Password:</label><p><input type="password" name="veripass" id="veripass" class="field" /></p>
+	   <label>Email Address:</label><p><input type="text" name="email" id="email" class="field" /></p></div>
+       <h1>Billing Information</h1>
+      <div>
+       <label>First Name:</label><p><input type="text" name="firstname" id="firstname" class="field" /></p>
+	   <label>Last Name:</label><p><input type="text" name="lastname" id="lastname" class="field" /></p>
+       <label>Billing Address:</label><p><input type="text" name="address" id="address" class="field" /></p>
+       <label>City:</label><p><input type="text" name="city" id="city" class="field" /></p>
+       <label>Province:</label><p><select title="Province" class="field" id="province" name="province"> 
+                    <option value="" SELECTED ></option> 
+                    <option title="AB" value="AB"  >Alberta</option> 
+                    <option title="BC" value="BC"  >British Columbia</option>
+                    <option title="MB" value="MB"  >Manitoba</option> 
+                    <option title="NB" value="NB"  >New Brunswick</option>
+                    <option title="NL" value="NL"  >Newfoundland and Labrador</option> 
+                    <option title="NT" value="NT"  >Northwest Territories</option>
+                    <option title="NS" value="NS"  >Nova Scotia</option> 
+                    <option title="NU" value="NU"  >Nunavut</option>
+                    <option title="ON" value="ON"  >Ontario</option>
+                    <option title="PE" value="OE"  >Prince Edward Island</option>  
+                    <option title="QC" value="QC"  >Quebec</option>
+                    <option title="SK" value="SK"  >Saskatchewan</option> 
+                    <option title="YT" value="YT"  >Yukon</option>  
+               </select> </p>
+       <label>Postal Code:</label><p><input type="text" name="postal" id="postal" class="field" /></p></div>
+       <h3><input type="checkbox" name="agree" id="agree" />
+       Yes, I have read and I accept the End User License Agreement, the Terms of Services and Privacy Statement.</h3>
+      <div><p class="submit"><input name="submit" type="submit" class="button" id="submit" value="Register" /><input name="reset" type="reset" class="button" id="reset" value="Reset" /></p></div>
+    </form>
