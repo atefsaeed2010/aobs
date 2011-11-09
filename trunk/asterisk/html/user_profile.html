@@ -1,0 +1,37 @@
+
+  	<h3>My Profile</h3>
+    <p>If you wish to update your personal, contact, or billing information, please change them in this form and submit it for verification.</p>
+
+    
+<form id="modify" method="post" action="?aobs=user&amp;tab=mdfy">
+<h1>User Information</h1>
+       <div>
+       <label>Usermame: </label><p><input name="username" type="text" class="field" id="username" value="$user" readonly="readonly" /></p>
+       <label>Password: </label><p><input name="password" type="password" class="field" id="password" value="******" readonly="readonly" /></p>
+<label>Email: </label><p><input name="email" type="text" class="field" id="email" value="$uemail" /></p></div>
+       <h1>Billing Information</h1>
+      <div>
+       <label>First Name: </label><p><input name="firstname" type="text" class="field" id="firstname" value="$ufirst" /></p>
+	   <label>Last Name: </label><p><input name="lastname" type="text" class="field" id="lastname" value="$ulast" /></p>
+       <label>Address: </label><p><input name="address" type="text" class="field" id="address" value="$uaddr" /></p>
+       <label>City: </label><p><input name="city" type="text" class="field" id="city" value="$ucity" /></p>
+<label>Province: </label><p><select title="Province" class="field" id="province" name="province"> 
+       		<option value="" SELECTED ></option> 
+            <option title="AB" value="AB" $ab>Alberta</option> 
+            <option title="BC" value="BC" $bc>British Columbia</option>
+            <option title="MB" value="MB" $mb>Manitoba</option> 
+            <option title="NB" value="NB" $nb>New Brunswick</option>
+            <option title="NL" value="NL" $nl>Newfoundland and Labrador</option> 
+            <option title="NT" value="NT" $nt>Northwest Territories</option>
+            <option title="NS" value="NS" $ns>Nova Scotia</option> 
+            <option title="NU" value="NU" $nu>Nunavut</option>
+            <option title="ON" value="ON" $on>Ontario</option> 
+            <option title="PE" value="PE" $pe>Prince Edward Island</option> 
+            <option title="QC" value="QC" $qc>Quebec</option>
+            <option title="SK" value="SK" $sk>Saskatchewan</option> 
+            <option title="YT" value="YT" $yt>Yukon</option>  
+           </select> </p>
+       <label>Postal Code: </label><p><input name="postal" type="text" class="field" id="postal" value="$upost" /></p></div>
+       <h3><input type="checkbox" name="confirm" id="confirm" />Yes, I confirm the changes</h3>
+      <p class="submit"><input name="submit" type="submit" class="button" id="submit" value="Change" /><input name="reset" type="reset" class="button" id="reset" value="Cancel" /></p>
+    </form>
